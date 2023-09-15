@@ -1,4 +1,4 @@
-def do_fizzbuzz():
+def do_fizzbuzz(num:int):
     '''
     fizzbuzz 기능을 수행합니다.
     정해진 숫자에 대해, 
@@ -8,7 +8,7 @@ def do_fizzbuzz():
     나머지는 숫자 그대로를 출력합니다.
     '''
     
-    for i in range(1, 20+1):
+    for i in range(1, num+1):
         if i%15 == 0:
             print('fizzbuzz')
         elif i%3 == 0:
@@ -19,4 +19,4 @@ def do_fizzbuzz():
             print(i)
 
 if __name__ == '__main__':
-    do_fizzbuzz()
+    do_fizzbuzz(16)
